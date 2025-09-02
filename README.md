@@ -13,7 +13,7 @@ Team Members & Roles:
 
 ---
 
-🗓 Phase 1: Foundation & Setup (Week 1)
+🗓 Phase 1: Foundation & Setup
 
 Gourab's Tasks (Backend/DB):
 
@@ -46,7 +46,7 @@ Nandini's Tasks (Frontend):
 
 ---
 
-🧩 Phase 2: Personalized Learning Module (Weeks 2-3)
+🧩 Phase 2: Personalized Learning Module
 
 Gourab's Tasks:
 
@@ -78,7 +78,7 @@ Nandini's Tasks:
 
 ---
 
-📝 Phase 3: Smart Exams & Evaluation (Weeks 4-5)
+📝 Phase 3: Smart Exams & Evaluation
 
 Gourab's Tasks:
 
@@ -110,7 +110,7 @@ Nandini's Tasks:
 
 ---
 
-🗣 Phase 4: AI Tutor for Rural Students (Weeks 6-7)
+🗣 Phase 4: AI Tutor for Rural Students
 
 Gourab's Tasks:
 
@@ -142,7 +142,7 @@ Nandini's Tasks:
 
 ---
 
-💼 Phase 5: Career Guidance & Skill Assessment (Weeks 8-9)
+💼 Phase 5: Career Guidance & Skill Assessment
 
 Gourab's Tasks:
 
@@ -174,7 +174,7 @@ Nandini's Tasks:
 
 ---
 
-📚 Phase 6: 200+ Courses & Certificates (Weeks 10-11)
+📚 Phase 6: 200+ Courses & Certificates
 
 Gourab's Tasks:
 
@@ -206,7 +206,7 @@ Nandini's Tasks:
 
 ---
 
-🧪 Phase 7: Testing & Optimization (Week 12)
+🧪 Phase 7: Testing & Optimization
 
 Gourab's Tasks:
 
@@ -238,7 +238,7 @@ Nandini's Tasks:
 
 ---
 
-🚀 Phase 8: Deployment & Documentation (Week 13)
+🚀 Phase 8: Deployment & Documentation
 
 Gourab's Tasks:
 
