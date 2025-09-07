@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* EduAI Design System - All colors, gradients, fonts, etc defined here. 
+All colors MUST be HSL for consistent theming.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors */
+    --background: 0 0% 100%;
+    --foreground: 222 84% 5%;
+    --surface: 0 0% 100%;
+    --surface-variant: 210 40% 98%;
+
+    /* Brand Colors - Beautiful blue to purple gradient system */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 217 91% 50%;
+    --primary-light: 217 91% 70%;
+    
+    --secondary: 261 83% 58%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-dark: 261 83% 48%;
+    --secondary-light: 261 83% 68%;
+
+    /* Educational Colors */
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+    --info: 199 89% 48%;
+    --info-foreground: 0 0% 100%;
+
+    /* Neutral System */
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222 84% 5%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 217 91% 60%;
+
+    /* Course Category Colors */
+    --course-web: 24 100% 50%;       /* Orange */
+    --course-programming: 142 76% 36%; /* Green */
+    --course-design: 261 83% 58%;     /* Purple */
+    --course-data: 199 89% 48%;       /* Blue */
+    --course-mobile: 330 81% 60%;     /* Pink */
+    --course-ai: 160 84% 39%;         /* Teal */
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+    --gradient-success: linear-gradient(135deg, hsl(var(--success)), hsl(142 76% 50%));
+    --gradient-warning: linear-gradient(135deg, hsl(var(--warning)), hsl(45 93% 58%));
+    --gradient-surface: linear-gradient(135deg, hsl(var(--surface)), hsl(248 250 252));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+
+    /* Shadows & Effects */
+    --shadow-sm: 0 1px 2px 0 hsl(var(--foreground) / 0.05);
+    --shadow-md: 0 4px 6px -1px hsl(var(--foreground) / 0.1);
+    --shadow-lg: 0 10px 15px -3px hsl(var(--foreground) / 0.1);
+    --shadow-xl: 0 20px 25px -5px hsl(var(--foreground) / 0.1);
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.15);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    /* Sidebar */
+    --sidebar-background: hsl(var(--surface));
+    --sidebar-foreground: hsl(var(--muted-foreground));
+    --sidebar-primary: hsl(var(--primary));
+    --sidebar-primary-foreground: hsl(var(--primary-foreground));
+    --sidebar-accent: hsl(var(--muted));
+    --sidebar-accent-foreground: hsl(var(--accent-foreground));
+    --sidebar-border: hsl(var(--border));
+    --sidebar-ring: hsl(var(--ring));
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* Dark Mode Base */
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
+    --surface: 222 84% 7%;
+    --surface-variant: 217 33% 10%;
+
+    /* Dark Brand Colors */
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 84% 5%;
+    --primary-dark: 217 91% 55%;
+    --primary-light: 217 91% 75%;
+    
+    --secondary: 261 83% 65%;
+    --secondary-foreground: 222 84% 5%;
+    --secondary-dark: 261 83% 55%;
+    --secondary-light: 261 83% 75%;
+
+    /* Dark Educational Colors */
+    --success: 142 76% 45%;
+    --warning: 38 92% 60%;
+    --danger: 0 84% 65%;
+    --info: 199 89% 55%;
+
+    /* Dark Neutrals */
+    --muted: 217 33% 15%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 33% 15%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217 33% 18%;
+    --input: 217 33% 18%;
+    --ring: 217 91% 65%;
+
+    /* Dark Shadows */
+    --shadow-sm: 0 1px 2px 0 hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 6px -1px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 10px 15px -3px hsl(0 0% 0% / 0.4);
+    --shadow-xl: 0 20px 25px -5px hsl(0 0% 0% / 0.5);
+    --shadow-primary: 0 10px 30px -10px hsl(var(--primary) / 0.4);
+    --shadow-glow: 0 0 40px hsl(var(--primary) / 0.2);
+
+    /* Dark Gradients */
+    --gradient-surface: linear-gradient(135deg, hsl(var(--surface)), hsl(217 33% 12%));
+
+    /* Dark Sidebar */
+    --sidebar-background: hsl(var(--surface));
+    --sidebar-foreground: hsl(var(--muted-foreground));
+    --sidebar-primary: hsl(var(--primary));
+    --sidebar-primary-foreground: hsl(var(--primary-foreground));
+    --sidebar-accent: hsl(var(--muted));
+    --sidebar-accent-foreground: hsl(var(--accent-foreground));
+    --sidebar-border: hsl(var(--border));
+    --sidebar-ring: hsl(var(--ring));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* Custom Course Card Variants */
+  .course-web { @apply bg-gradient-to-br from-orange-500 to-red-500; }
+  .course-programming { @apply bg-gradient-to-br from-green-500 to-emerald-600; }
+  .course-design { @apply bg-gradient-to-br from-purple-500 to-violet-600; }
+  .course-data { @apply bg-gradient-to-br from-blue-500 to-cyan-500; }
+  .course-mobile { @apply bg-gradient-to-br from-pink-500 to-rose-500; }
+  .course-ai { @apply bg-gradient-to-br from-teal-500 to-green-500; }
+  .course-security { @apply bg-gradient-to-br from-red-600 to-orange-600; }
+  .course-marketing { @apply bg-gradient-to-br from-green-600 to-teal-600; }
+  .course-cloud { @apply bg-gradient-to-br from-sky-500 to-blue-600; }
+  .course-blockchain { @apply bg-gradient-to-br from-yellow-500 to-yellow-600; }
+  .course-game { @apply bg-gradient-to-br from-purple-600 to-indigo-600; }
+  
+  /* Animation Classes */
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .hover-scale {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.02);
+  }
+  
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
